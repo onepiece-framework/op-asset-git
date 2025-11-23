@@ -5,3 +5,11 @@
     `php Init.php`
     When you run init.php, the following functions are enabled:
          1. GitHooks is enabled and only valid branch names that have passed CI/CD can be pushed.
+
+# Usage
+
+This module contains tools for working with local repositories.
+
+ 1. cd app:/
+ 1. ln -s asset:/module/git _git
+ 1. php app.php _git
