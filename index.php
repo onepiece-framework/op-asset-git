@@ -28,7 +28,9 @@ if(!OP::isAdmin() ){
 }
 
 //	...
-$command = OP::Request('command');
+if(!$command = OP::Request('command') ){
+	$command = include(__DIR__.'/content/interactive/comand.php');
+}
 
 //	...
 switch( $command ){
